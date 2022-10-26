@@ -1,0 +1,26 @@
+#扫描所有mybatis的xml文件
+mybatis:
+    mapper-locations: mapper/*.xml
+mybatis-plus:
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+    # 应用服务 WEB 访问端口
+    port: 9090
+spring:
+    # 应用名称
+    application:
+        name: vueblog
+    datasource:
+        # 数据库驱动：
+        driver-class-name: com.mysql.jdbc.Driver
+        # 数据源名称
+        name: defaultDataSource
+        # 数据库用户名&密码：
+        username: root
+        password: 123456
+        # 数据库连接地址
+        url: jdbc:mysql://localhost:3307/supermarket?serverTimezone=UTC
+files:
+    upload:
+        path: E:\SuperMarketManagementSystem\files\goods\
